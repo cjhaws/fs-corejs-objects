@@ -1,0 +1,28 @@
+{
+  "name": "fs-corejs-objects",
+  "version": "1.0.0",
+  "description": "Full Stack Object assignments",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava **/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helio-training/fs-corejs-objects.git"
+  },
+  "keywords": [
+    "objects",
+    "object-literals",
+    "contructors"
+  ],
+  "author": "Thor Anderson <tanderson@heliotraining.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helio-training/fs-corejs-objects/issues"
+  },
+  "homepage": "https://github.com/helio-training/fs-corejs-objects#readme",
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "babel": "^6.23.0"
+  }
+}
