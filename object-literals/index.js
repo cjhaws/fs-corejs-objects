@@ -1,0 +1,37 @@
+const ssn = (value) => {
+
+  const sanitize = () => value.replace(/\D+/g, '').toString();
+
+  const format = value => `${value.substring(0, 3)}-${value.substring(3, 5)}-${value.substring(5)}`;
+    
+  const sanitizedValue = sanitize();
+  
+  
+  
+  
+  
+  const isValid = () => {
+    return sanitizedValue.length === 9;
+  };
+
+  return {
+    
+    get isValid() {
+      return isValid();
+    },
+
+    // isValid,
+
+    toString(){
+      // if(!isValid()) {
+      //   throw Error('Invalid SSN');
+      // }
+      return format(sanitizedValue);
+    }
+  };
+};
+
+
+const result = ssn('12345678a1');
+console.log(result.toString());
+console.log(result.isValid);
